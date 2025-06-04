@@ -1,0 +1,65 @@
+:root {
+    --text: oklch(92.71% 0.014 60.56);
+    --background: oklch(18.91% 0.016 62.18);
+    --primary: oklch(81.47% 0.058 63.41);
+    --secondary: oklch(51.12% 0.105 237.48);
+    --accent: oklch(71.71% 0.175 53.47);
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.primary-button {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--background)
+}
+
+.primary-button:hover {
+    background-color: var(--accent);
+    color: var(--text)
+}
+
+.secondary-button {
+    background: var(--secondary);
+    color: var(--text)
+}
+
+.secondary-button:hover {
+    background-color: var(--accent);
+    color: var(--text)
+}
+
+.accent {
+    background: var(--accent);
+}
+
+.text {
+    color: var(--text);
+}
+
+th, td, tr {
+    padding: 5px;
+}
+
+
+.lewidth {
+    width: 50px;
+}
+
+tr {
+    padding: 5px;
+    border-bottom: 1px solid var(--background);
+
+
+}
